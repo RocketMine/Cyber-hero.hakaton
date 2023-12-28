@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Тесты по цифровой безопасности</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="json/tests.json"></script>
+      <script src="js/script_create_page.js"></script>
+      <style>
+        #customDialog {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          padding: 20px;
+          border: 1px solid #ccc;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+        }
+      
+        #overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <header class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="main.html">
+          <img src="img/1.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tests.html">Тесты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">Полезная информация</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    
+    <div id="testContainer"></div>
+
+    <footer>
+        <div class="footer">
+          <p>Свяжитесь с нами: example@email.com | Телефон: +123456789</p>
+        </div>
+      </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <div id="overlay"></div>
+    <div id="customDialog">
+      <h2>Результат теста</h2>
+      <p id="popupMessage"></p>
+      <label for="userNameInput">Введите ваше имя:</label>
+      <input type="text" id="userNameInput" placeholder="Ваше имя">
+      <button onclick="saveResultsFromPopup()">Сохранить результаты</button>
+      <button onclick="closePopup()">Закрыть</button>
+    </div>
+
+    </body>
+    </html>

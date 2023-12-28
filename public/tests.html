@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Тесты по цифровой безопасности</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Навигационная панель -->
+<header class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="main.html">
+    <img src="img/1.png" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="main.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tests.html">Тесты</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info.html">Полезная информация</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Содержимое страницы с тестами -->
+<div class="test-block-one">
+  <div>
+    <h2>У нас рейтинг таблица, чтобы попасть в неё:</h2>
+    <hr>
+  </div>
+  <div class="test-block-two">
+    <div class="border-right">
+      <img src="img/svg1.png" height="100px"><br><br>
+      <h5>Ознакомьтесь с полезной информацией</h3>
+    </div>
+    <div class="border-right">
+      <img src="img/svg2.png" height="100px"><br><br>
+      <h5>Пройдите тесты</h3>
+    </div>
+    <div>
+      <img src="img/svg3.png" height="100px"><br><br>
+      <h5>Попадите в рейтинговую таблицу и делитесь результатом с другими</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Тесты и таблица -->
+<div class="grid-2-2">
+  <div class="grid-2columns-2rows">
+    <!-- Блоки с тестами и кнопками -->
+    <div class="test-icheyka">
+      <h1>Тест №1</h1>
+      <p>Основы цифрового мошенничества</p>
+      <button class="knopka" onclick="openPage(1)">Пройти</button>
+    </div>
+    <div class="test-icheyka">
+      <h1>Тест №2</h1>
+      <p>Мошенничество в сети</p>
+      <button class="knopka" onclick="openPage(2)">Пройти</button>
+    </div>
+    <div class="test-icheyka">
+      <h1>Тест №3</h1>
+      <p>Безопасность онлайн-транзакций</p>
+      <button class="knopka" onclick="openPage(3)">Пройти</button>
+    </div>
+    <div class="test-icheyka">
+      <h1>Тест №4</h1>
+      <p>Телефонное мошенничество</p>
+      <button class="knopka" onclick="openPage(4)">Пройти</button>
+    </div>
+  </div>
+  <div class="table-reit">
+    <h1>Таблица рейтинга:</h1>
+    <hr>
+    <!-- Сюда пихнуть таблицу -->
+    <table id="usersTable" class="table_bab">
+      <thead>
+        <tr>
+          <th><h2>Место</h2></th>
+          <th><h2>Имя пользователя</h2></th>
+          <th><h2>Баллы</h2></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="js/script_for_table.js"></script>
+  </div>
+</div>
+
+<!-- footer страницы -->
+<footer>
+  <div class="footer">
+    <p>Свяжитесь с нами: example@email.com | Телефон: +123456789</p>
+  </div>
+</footer>
+
+<!-- Cкрипты -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Скрипт для перехода на другую страницу -->
+<script>
+  function openPage(a) {
+    // Кодируем данные для передачи через URL
+    var encodedData = encodeURIComponent(a);
+
+    // Формируем URL с параметрами
+    var nextPageURL = 'test_cont.html?data=' + encodedData;
+
+    // Переходим на другую страницу
+    window.location.href = nextPageURL;
+  }
+</script>
+
+</body>
+</html>

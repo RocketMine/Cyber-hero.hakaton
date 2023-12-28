@@ -1,0 +1,299 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% высоты видимой области страницы */
+    background-color: #f8e397;
+    word-wrap: break-word;
+  }
+
+  footer {
+    background-color: #ffc700; 
+    padding: 2%; 
+    margin-top: auto; 
+  }
+
+.navbar-brand img {
+    height: 6em; 
+    width: auto; 
+  }
+
+.container {
+    background-color: #f8f9fa;
+    padding: 2%; 
+  }
+
+.btn-primary {
+    background-color: #1fa7e0;
+    border-color: #1fa7e0;
+  }
+.container-cyber{
+  width: 66%;
+  margin-left: 17%;
+  margin-right: 20%;
+  padding: 1%;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #ffffff 80%, #f8e397);
+  padding-bottom: 5%;
+  margin-top: 2%;
+}
+.padding-left{
+  padding-left: 15%;
+}
+.hr-white{
+  background-color: white;
+}
+.text-color-gray{
+  color: rgb(66, 64, 64);
+}
+.text-center{
+  text-align: center;
+}
+.text-aling-left{
+  text-align: left;
+}
+header {
+  height: 200px; 
+  background: linear-gradient(to bottom, #ffffff 70%, #f8e397);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Общие стили футера */
+footer {
+  height: 200px;
+  background: linear-gradient(to top, #ffffff 70%, #f8e397);
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer{
+  margin-top: 5%;
+  color: rgb(66, 64, 64);
+}
+.color-black{
+  color: black;
+}
+.container-1-3{
+  background-color: #ffc700;
+  background: linear-gradient(to bottom, #ffc700 70%, #f8e397);
+  padding: 10%;
+}
+.container-2-3{
+  background-color: #90CCF4;
+  background: linear-gradient(to bottom, #90CCF4 70%, #f8e397);
+  padding: 10%;
+}
+.container-3-3{
+  background-color: #f58888;
+  background: linear-gradient(to bottom, #f58888 70%, #f8e397);
+  padding: 10%;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 10%;
+  text-align: center;
+}
+.margin5{
+  padding-top: 10%;
+}
+.knopka {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: #90CCF4; /* Серый цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 50px; /* Скругляем уголки */
+ }
+.grid-2-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  gap: 5%;
+}
+.grid-2columns-2rows{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5%;
+  text-align: center;
+}
+.table-reit{
+  text-align: center;
+  background: linear-gradient(to bottom, #90CCF4 70%, #f8e397);
+  border-radius: 15px;
+}
+.test-icheyka{
+  background: linear-gradient(to bottom, #f58888 90%, #f8e397);
+  border-radius: 5px;
+  padding-bottom: 5%;
+}
+.test-block-one{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.test-block-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.border-right{
+  border-right:20px solid black;
+}
+.table-cell {
+  font-size: 28px; /* Измените значение на желаемый размер текста */
+}
+.table_bab{
+  width: 100%;
+}
+.webinars2{
+  margin-top: 2%;
+}
+.container-cyber h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.container-cyber h2 {
+  font-size: 1.5em;
+}
+
+/* Медиазапросы */
+@media screen and (max-width: 1400px) {
+  .grid-3 {
+    display: flex;
+    flex-wrap: wrap; /* Перенос блоков на новую строку */
+  }
+
+  .container-1-3,
+  .container-2-3,
+  .container-3-3 {
+    width: 100%; /* Каждый контейнер занимает 100% ширины при разрешении менее 1400 пикселей */
+  }
+
+  div.grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div.margin5 {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2em; /* Размер шрифта в em для адаптивности */
+  }
+  
+  img {
+    width: 80%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 1.5em; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+  
+    img {
+      width: 100%; /* Фотография занимает 100% ширины на мобильных устройствах */
+    }
+  
+    .navbar {
+      flex-direction: column; /* Столбцовая ориентация на мобильных устройствах */
+      align-items: center; /* Выравнивание по центру */
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px; /* Добавим небольшой отступ между текстом и логотипом на мобильных устройствах */
+    }
+
+    .navbar-toggler {
+      order: -1; /* Перемещаем тоглер в начало строки (справа от логотипа) */
+    }
+
+    .navbar-nav {
+      width: 100%; /* Занимает всю ширину */
+      text-align: center; /* Выравнивание элементов по центру */
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0; /* Убираем отступы между элементами */
+    }
+  
+    .navbar-nav .nav-item a {
+      display: block; /* Блочное отображение элементов для полного блока клика */
+    }
+  }
+
+  /* Медиазапрос для размера экрана 1050px и меньше */
+@media screen and (max-width: 1050px) {
+  .test-block-two {
+    flex-direction: column; /* Меняем направление флекс-контейнера на колонку */
+    align-items: center; /* Выравниваем по центру */
+  }
+  .test-block-two img {
+    max-width: 50%;
+    max-height: 80%;
+  }
+
+  .border-right {
+    border-right: none; /* Убираем границу между блоками */
+    padding-right: 0; /* Убираем отступ справа */
+  }
+  
+  /* Общий стиль для внутренних блоков */
+  .test-block-two {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+}
+/* Медиа-запрос для размера экрана 1050px и меньше */
+@media (max-width: 1050px) {
+  .grid-2-2 {
+    grid-template-columns: 1fr; /* Один столбец вместо двух */
+  }
+
+  .test-icheyka,
+  .table-reit {
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: none; /* Убираем ограничение по максимальной ширине */
+  }
+
+  .table_bab h2 {
+    font-size: 1.3em; /* Размер шрифта в h2 в em для таблицы */
+  }
+  .table_bab {
+    max-height: 40%; /* Высота таблицы автоматически подстраивается под содержимое */
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    background-color: #ffc700;
+    padding: 2%;
+    margin-top: auto;
+    height: auto; /* Автоматическая высота для адаптивности */
+    word-wrap: break-word;
+  }
+}
+
+}

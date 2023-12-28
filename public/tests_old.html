@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Тесты по цифровой безопасности</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="main.html">
+    <img src="img/1.png" alt="logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="main.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tests.html">Тесты</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info.html">Полезная информация</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Содержимое страницы с тестами -->
+<div class="container mt-4">
+  <h2>Тест №1</h2>
+  <p>Некоторое описание теста №1...</p>
+  <button class="btn btn-primary" onclick="openPage(1)">Пройти</button>
+</div>
+
+<div class="container mt-4">
+  <h2>Тест №2</h2>
+  <p>Некоторое описание теста №2...</p>
+  <button class="btn btn-primary" onclick="openPage(2)">Пройти</button>
+</div>
+
+<div class="container mt-4">
+  <h2>Тест №3</h2>
+  <p>Некоторое описание теста №3...</p>
+  <button class="btn btn-primary" onclick="openPage(3)">Пройти</button>
+</div>
+
+<div class="container mt-4">
+  <h2>Тест №4</h2>
+  <p>Некоторое описание теста №4...</p>
+  <button class="btn btn-primary" onclick="openPage(4)">Пройти</button>
+</div>
+
+<!-- Подвал страницы -->
+<footer class="bg-light text-center py-3">
+  <p>Свяжитесь с нами: example@email.com | Телефон: +123456789</p>
+</footer>
+
+<!-- Подключение скриптов -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Скрипт для перехода на другую страницу -->
+<script>
+  function openPage(a) {
+    // Кодируем данные для передачи через URL
+    var encodedData = encodeURIComponent(a);
+
+    // Формируем URL с параметрами
+    var nextPageURL = 'test_cont.html?data=' + encodedData;
+
+    // Переходим на другую страницу
+    window.location.href = nextPageURL;
+  }
+</script>
+
+
+</body>
+</html>
